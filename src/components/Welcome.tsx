@@ -1,4 +1,5 @@
 import logo from '../assets/deplar_Logo_Full.svg';
+import '../styles/Welcome.css';
 import { BaseButton } from './base/BaseButton';
 
 export const Welcome = () => {
@@ -13,13 +14,9 @@ export const Welcome = () => {
 			</div>
 			<BaseButton
 				name='Continue'
-				id='welcome to continue'
+				id='continue'
 				onClick={handleClick}
-				style={{
-					backgroundColor: '#dab335',
-					color: 'black',
-					marginBlockStart: '1rem',
-				}}
+				className='welcomeContinueButton'
 			></BaseButton>
 		</>
 	);

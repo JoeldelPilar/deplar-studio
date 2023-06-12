@@ -2,8 +2,13 @@ import logo from '../assets/deplar_Logo_Full.svg';
 import '../styles/Welcome.css';
 import { BaseButton } from './base/BaseButton';
 
-export const Welcome = () => {
+interface IWelcomeProps {
+	enterPage: () => void;
+}
+
+export const Welcome = ({ enterPage }: IWelcomeProps) => {
 	const handleClick = () => {
+		enterPage();
 		console.log('clicked');
 	};
 
